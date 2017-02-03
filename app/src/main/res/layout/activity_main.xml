@@ -8,8 +8,8 @@
     tools:context="tk.wablanchett.inclass_activity_01_blanchett.MainActivity">
 
     <DatePicker
-        android:layout_width="248dp"
-        android:layout_height="212dp"
+        android:layout_width="218dp"
+        android:layout_height="219dp"
         android:id="@+id/dadate"
         android:layout_marginStart="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -26,7 +26,7 @@
         android:spinnersShown="true"/>
 
     <TextView
-        android:text="Selected date: "
+        android:text="TIME"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
@@ -38,67 +38,47 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="16dp"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="1.0"
+        android:textSize="36sp" />
 
     <TextView
-        android:text="TextView"
+        android:text="Wed June 21 00:00:00 EDT 0000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView2"
+        android:id="@+id/dateWindow"
         android:layout_marginTop="16dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="@+id/datime"
-        app:layout_constraintVertical_bias="0.08"
         android:layout_marginStart="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginEnd="16dp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.95" />
+        app:layout_constraintHorizontal_bias="1.0" />
 
     <TimePicker
-        android:layout_width="261dp"
-        android:layout_height="240dp"
+        android:layout_width="256dp"
+        android:layout_height="212dp"
         android:id="@+id/datime"
         android:timePickerMode="spinner"
         android:layout_marginTop="16dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="16dp"
-        app:layout_constraintLeft_toLeftOf="@+id/textView3"
         android:layout_marginEnd="16dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:text="Selected Time:"
+        android:text="DATE"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView3"
+        tools:layout_editor_absoluteX="294dp"
+        android:id="@+id/textView2"
         android:layout_marginTop="16dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="0.7" />
+        android:fontFamily="sans-serif"
+        android:textSize="30sp" />
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.78"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="@+id/datime"
-        app:layout_constraintHorizontal_bias="0.0" />
 </android.support.constraint.ConstraintLayout>
