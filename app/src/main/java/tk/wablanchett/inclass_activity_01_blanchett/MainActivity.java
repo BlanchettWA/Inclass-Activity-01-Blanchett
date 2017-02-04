@@ -22,20 +22,19 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        final Calendar cali = Calendar.getInstance();
+
         daDate = (DatePicker) findViewById(R.id.dadate);
         daTime = (TimePicker) findViewById(R.id.datime);
         dateWindow = (TextView) findViewById(R.id.dateWindow);
-        dateWindow.setText(Calendar.getInstance().getTime().toString());
+        dateWindow.setText(cali.getTime().toString());
 
-
-        dateWindow.setText(Calendar.getInstance().getTime().toString());
-            daDate.init(2017, 2, 3, new DatePicker.OnDateChangedListener()
+            daDate.init(2017, 2, 2, new DatePicker.OnDateChangedListener()
             {
                 public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth)
                 {
-                    Calendar cal = Calendar.getInstance();
-                    cal.set(year,monthOfYear,dayOfMonth);
-                    dateWindow.setText(cal.getTime().toString());
+                    cali.set(year,monthOfYear,dayOfMonth);
+                    dateWindow.setText(cali.getTime().toString());
                 }
             });
 
